@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>love</title>
+</head>
+
+<body>
+<h1>您是第{{num}}个访问此网站的人
+<h1>请分别输入
+<h2>男生的名字
+<h2>女生的名字
+<h3>你们相遇的时间
+<form method = 'post' enctype="multipart/form-data">
+    {% csrf_token %}
+    <p><input tpye="text" name='boy' value="男生">
+    <p><input tpye="text" name='girl' value="女生">
+    <p><input tpye="text" name='time' value="2017,1,2">
+    <p><input type="submit" value = "ok" />
+</form>
+
+</body>
+</html>
